@@ -38,8 +38,8 @@ public class CompanyController {
 	}
 	
 	@DeleteMapping("/{id}")
-	public ResponseEntity<String> deleteCompanyById(@PathVariable Long Id){
-		if(companyService.deleteCompanyById(Id)) {
+	public ResponseEntity<String> deleteCompanyById(@PathVariable Long id){
+		if(companyService.deleteCompanyById(id)) {
 			return new ResponseEntity<>("Company deleted successfully",HttpStatus.OK);
 		}
 		
